@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GirlsDay: Interaktive Aufgaben</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interaktive Aufgaben für HTML, CSS & JS</h1>
+    <h3>Komm gerne auf mich zu, falls du Fragen hast!</h3>
+  </header>
+
+  <main>
+    <!-- Aufgabe 1: HTML – Absatz erstellen -->
+    <section class="task" id="task1">
+      <h2>Aufgabe 1: Erstelle einen Absatz</h2>
+      <p><strong>Beschreibung:</strong> Erstelle einen Absatz mit dem <code>&lt;p&gt;</code>-Tag.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>&lt;p&gt;Hello GirlsDay!&lt;/p&gt;</pre>
+      <p><strong>Erklärung:</strong> Das <code>&lt;p&gt;</code>-Tag definiert einen Absatz.</p>
+      <p><strong>Rätsel:</strong> Füge in deinen Absatz das versteckte Wort <em>"Blume"</em> ein.</p>
+      <label for="task1-code">Aufgabe 1: HTML-Code eingeben:</label>
+      <textarea id="task1-code" placeholder="Füge deinen HTML-Code hier ein" title="HTML-Code für Aufgabe 1" spellcheck="false"></textarea>
+      <button onclick="runTask(1)">Ausführen</button>
+      <div class="preview" id="task1-preview"></div>
+    </section>
+
+    <!-- Aufgabe 2: HTML – Überschrift erstellen -->
+    <section class="task" id="task2">
+      <h2>Aufgabe 2: Erstelle eine Überschrift</h2>
+      <p><strong>Beschreibung:</strong> Erstelle eine Überschrift der Ebene 1 mit dem <code>&lt;h1&gt;</code>-Tag.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>&lt;h1&gt;Willkommen!&lt;/h1&gt;</pre>
+      <p><strong>Erklärung:</strong> Überschriften helfen, Inhalte zu strukturieren.</p>
+      <p><strong>Rätsel:</strong> Schreibe in deine Überschrift die magische Zahl <em>"1"</em> mit hinein.</p>
+      <label for="task2-code">Aufgabe 2: HTML-Code eingeben:</label>
+      <textarea id="task2-code" placeholder="Füge deinen HTML-Code hier ein" title="HTML-Code für Aufgabe 2" spellcheck="false"></textarea>
+      <button onclick="runTask(2)">Ausführen</button>
+      <div class="preview" id="task2-preview"></div>
+    </section>
+
+    <!-- Aufgabe 3: HTML – Link erstellen -->
+    <section class="task" id="task3">
+      <h2>Aufgabe 3: Erstelle einen Link</h2>
+      <p><strong>Beschreibung:</strong> Erstelle einen Hyperlink mit dem <code>&lt;a&gt;</code>-Tag.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>&lt;a href="https://example.com"&gt;Besuche Example&lt;/a&gt;</pre>
+      <p><strong>Erklärung:</strong> Mit dem <code>&lt;a&gt;</code>-Tag erstellt man Links.</p>
+      <p><strong>Rätsel:</strong> In "exmple.com" fehlt ein Buchstabe – füge ihn ein, damit es "example.com" wird.</p>
+      <label for="task3-code">Aufgabe 3: HTML-Code eingeben:</label>
+      <textarea id="task3-code" placeholder="Füge deinen HTML-Code hier ein" title="HTML-Code für Aufgabe 3" spellcheck="false"></textarea>
+      <button onclick="runTask(3)">Ausführen</button>
+      <div class="preview" id="task3-preview"></div>
+    </section>
+
+    <!-- Aufgabe 4: HTML – Bild einfügen -->
+    <section class="task" id="task4">
+      <h2>Aufgabe 4: Füge ein Bild ein</h2>
+      <p><strong>Beschreibung:</strong> Erstelle ein Bild-Element mit dem <code>&lt;img&gt;</code>-Tag. Nimm dafür gerne die URL: https://shorturl.at/W4S6g.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>&lt;img src="Bild URL"&gt;</pre>
+      <p><strong>Erklärung:</strong> Das <code>&lt;img&gt;</code>-Tag bindet ein Bild ein.</p>
+      <p><strong>Rätsel:</strong> Ergänze die URL im Code.</p>
+      <label for="task4-code">Aufgabe 4: HTML-Code eingeben:</label>
+      <textarea id="task4-code" placeholder="Füge deinen HTML-Code hier ein" title="HTML-Code für Aufgabe 4" spellcheck="false"></textarea>
+      <button onclick="runTask(4)">Ausführen</button>
+      <div class="preview" id="task4-preview"></div>
+    </section>
+
+    <!-- Aufgabe 5: CSS – Hintergrundfarbe ändern -->
+    <section class="task" id="task5">
+      <h2>Aufgabe 5: Ändere die Hintergrundfarbe</h2>
+      <p><strong>Beschreibung:</strong> Ändere mit Inline-CSS die Hintergrundfarbe eines Elements.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>&lt;div style="background-color: pink;"&gt;Inhalt&lt;/div&gt;</pre>
+      <p><strong>Erklärung:</strong> Mit <code>style="background-color: ..."</code> kannst du das Styling direkt im HTML-Tag festlegen.</p>
+      <p><strong>Rätsel:</strong> Finde den Hex-Code für Rosa. (Tipp: #FFC0CB)</p>
+      <label for="task5-code">Aufgabe 5: CSS-Code eingeben:</label>
+      <textarea id="task5-code" placeholder="Füge deinen CSS-Code hier ein" title="CSS-Code für Aufgabe 5" spellcheck="false"></textarea>
+      <button onclick="runTask(5)">Ausführen</button>
+      <div class="preview" id="task5-preview">Vorschaubereich</div>
+    </section>
+
+    <!-- Aufgabe 6: CSS – Schriftgröße ändern -->
+    <section class="task" id="task6">
+      <h2>Aufgabe 6: Ändere die Schriftgröße</h2>
+      <p><strong>Beschreibung:</strong> Ändere mit Inline-CSS die Schriftgröße eines Textes. Wir brauchen nur den CSS Befehl und die Größe.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>&lt;p style="font-size: 24px;"&gt;Großer Text&lt;/p&gt;</pre>
+      <p><strong>Erklärung:</strong> Mit <code>font-size</code> legst du die Textgröße fest.</p>
+      <p><strong>Rätsel:</strong> Erhöhe 24px um 50%. Welche Größe ergibt das?</p>
+      <label for="task6-code">Aufgabe 6: CSS-Code eingeben:</label>
+      <textarea id="task6-code" placeholder="Füge deinen CSS-Code hier ein" title="CSS-Code für Aufgabe 6" spellcheck="false"></textarea>
+      <button onclick="runTask(6)">Ausführen</button>
+      <div class="preview" id="task6-preview">Vorschaubereich</div>
+    </section>
+
+    <!-- Aufgabe 7: JavaScript – Text im Element ändern -->
+    <section class="task" id="task7">
+      <h2>Aufgabe 7: Ändere den Text mit JavaScript</h2>
+      <p><strong>Beschreibung:</strong> Nutze JavaScript, um den Text eines Elements zu ändern.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>document.getElementById('task7-preview').innerText = 'Hallo GirlsDay!';</pre>
+      <p><strong>Erklärung:</strong> Mit <code>document.getElementById()</code> erreichst du ein Element und kannst seinen Inhalt ändern.</p>
+      <p><strong>Rätsel:</strong> Ändere "Hallo" in "Hi" und füge ein Ausrufezeichen hinzu.</p>
+      <label for="task7-code">Aufgabe 7: JavaScript-Code eingeben:</label>
+      <textarea id="task7-code" placeholder="Füge deinen JavaScript-Code hier ein" title="JavaScript-Code für Aufgabe 7" spellcheck="false"></textarea>
+      <button onclick="runTask(7)">Ausführen</button>
+      <div class="preview" id="task7-preview">Vorschaubereich</div>
+    </section>
+
+    <!-- Aufgabe 8: JavaScript – Variable und Ausgabe -->
+    <section class="task" id="task8">
+      <h2>Aufgabe 8: Erstelle eine Variable</h2>
+      <p><strong>Beschreibung:</strong> Erstelle eine Variable und gib ihren Wert aus.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>
+let greeting = 'Hallo GirlsDay!';
+console.log(greeting);
+      </pre>
+      <p><strong>Erklärung:</strong> Variablen speichern Daten. Mit <code>console.log()</code> kannst du sie ausgeben.</p>
+      <p><strong>Rätsel:</strong> Ändere den Text in Großbuchstaben. (Tipp: .toUpperCase())</p>
+      <label for="task8-code">Aufgabe 8: JavaScript-Code eingeben:</label>
+      <textarea id="task8-code" placeholder="Füge deinen JavaScript-Code hier ein" title="JavaScript-Code für Aufgabe 8" spellcheck="false"></textarea>
+      <button onclick="runTask(8)">Ausführen</button>
+      <div class="preview" id="task8-preview">Schau in die Browser-Konsole (F12)</div>
+    </section>
+
+    <!-- Aufgabe 9: JavaScript – Funktion erstellen -->
+    <section class="task" id="task9">
+      <h2>Aufgabe 9: Erstelle eine Funktion</h2>
+      <p><strong>Beschreibung:</strong> Schreibe eine Funktion, die eine Nachricht in der Konsole ausgibt.</p>
+      <p><strong>Beispielcode:</strong></p>
+      <pre>
+function sayHello() {
+  console.log('Hallo!');
+}
+sayHello();
+      </pre>
+      <p><strong>Erklärung:</strong> Funktionen führen Codeblöcke aus, wenn sie aufgerufen werden.</p>
+      <p><strong>Rätsel:</strong> Ändere die Funktion so, dass sie deinen Namen ausgibt.</p>
+      <label for="task9-code">Aufgabe 9: JavaScript-Code eingeben:</label>
+      <textarea id="task9-code" placeholder="Füge deinen JavaScript-Code hier ein" title="JavaScript-Code für Aufgabe 9" spellcheck="false"></textarea>
+      <button onclick="runTask(9)">Ausführen</button>
+      <div class="preview" id="task9-preview">Schau in die Browser-Konsole (F12)</div>
+    </section>
+
+    <!-- Aufgabe 10: Abgabe -->
+<section class="task" id="task10">
+    <h2>Aufgabe 10: Abgabe</h2>
+    <p><strong>Beschreibung:</strong> Wenn du alle Aufgaben gelöst hast, gib in das Textfeld <em>Geschafft</em> ein.</p>
+    <label for="task10-code">Aufgabe 10: Deine Eingabe:</label>
+    <textarea id="task10-code" placeholder="Schreibe hier 'Geschafft'" title="Text für Aufgabe 10" spellcheck="false"></textarea>
+    <button onclick="runTask(10)">Abgeben</button>
+    <div class="preview" id="task10-preview"></div>
+  </section>
+  
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
